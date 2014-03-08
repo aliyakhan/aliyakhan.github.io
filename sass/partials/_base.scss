@@ -1,0 +1,24 @@
+* { 
+    @include box-sizing(border-box);
+}
+
+html {
+    background: white;
+    font-size: 100%;
+    line-height: 1.5;
+    color: #333;
+}
+
+body {
+    background: white;
+    padding-top: 3rem;
+    font-family: $primary-sans-serif;
+}
+
+a {
+    color: red;
+    
+    &:hover {
+        color: $light-orange;
+    }
+}

@@ -1,0 +1,17 @@
+@keyframes throbbing-heart {
+    10% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.125);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    25% {
+        transform: scale(1.125);
+    }
+    75% {
+        transform: scale(1);
+    }
+}

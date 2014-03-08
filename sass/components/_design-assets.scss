@@ -1,0 +1,16 @@
+.middot {
+  color: $light-gray;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ampersand {
+    font-family: baskerville, garamond, georgia, sans-serif;
+    font-style: italic;
+}
+
+.heart {
+    -webkit-animation: throbbing-heart 1s infinite;
+    animation: throbbing-heart 1s infinite;
+    color: $pinkyji;
+}

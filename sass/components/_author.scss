@@ -1,0 +1,6 @@
+.author__section {
+    @extend %text-align-center;
+    @include font-size(18);
+    max-width: 600px;
+    margin: auto;
+}

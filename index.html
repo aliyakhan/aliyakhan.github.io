@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=lato:400, 800' rel='stylesheet' type='text/css'/>
+    <link href='dist/css/screen.css' rel='stylesheet' type='text/css'/>
+
+    <script src="http://code.jquery.com/jquery-git2.js"></script>
+
+    <meta charset="utf-8">
+    <title>Aliya Khan</title>
+</head>
+
+<body>
+
+    <section class="one">
+    <header class="site__masthead" role="banner">
+    <h1 class="site__name">Aliya Khan</h1>
+
+    <nav class="site__links">
+    <ul>
+        <li><a href="#">DESIGNER</a></li>
+        <span class="middot">&middot;</span>
+        <li><a href="#">DRIBBBLER</a></li>
+        <span class="middot">&middot;</span>
+        <li><a href="#">DRUPAL THEMER</a></li>
+    </ul>
+    </nav>
+
+    </header>
+
+    <section class="site__tagline">
+    <p> I design <span class="site__tagline--highlight">Web <span class=ampersand>&amp;</span> Mobile</span> User Interfaces. </p>
+    <p> That's what I <i class="fa fa-heart heart"></i> to do. </p>
+    </section>
+
+    <div class="author__section">
+        <img src="img/a.png" alt="Aliya Khan" class="author--image">
+        <p class="author--description">
+        I design and make things mostly for the web &amp; I love what I do. I’m passionate about type and typography
+        especially pushing the limitations of typography in browser to produce great reading experiences.
+        </p>
+    </div>
+
+    <footer>
+    <p>&copy; Aliya Khan</p>
+    <p>Created from a paradise on earth, Kashmir.</p>
+    </footer>
+    </section>
+
+    <section class="two">
+        <header class="site__masthead" role="banner">
+        <h1 class="site__name">Aliya Khan</h1>
+
+        <nav class="site__links">
+            <ul>
+                <li><a href="#">DESIGNER</a></li>
+                <span class="middot">&middot;</span>
+                <li><a href="#">DRIBBBLER</a></li>
+                <span class="middot">&middot;</span>
+                <li><a href="#">DRUPAL THEMER</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div class="dribbble">
+       <ul></ul>
+    </div>
+    <script>
+        $.ajax({
+          url:'http://api.dribbble.com/players/aliyakhan/shots',
+          dataType: 'jsonp',
+          data: 'jsonp',
+          success: function(data) {
+            for(i=0; i < data.shots.length; i++) {
+              $('.dribbble ul').append('<li class="shot"><img src=' + data.shots[i].image_url + '></li>');
+              }
+      },
+      error: function() {
+        console.log('failed to fetch shots from Dribbble');
+    }
+});
+</script>
+
+        <footer>
+            <p>&copy; Aliya Khan</p>
+            <p>Created from a paradise on earth, Kashmir.</p>
+        </footer>
+    </section>
+
+
+</body>
+</html>
